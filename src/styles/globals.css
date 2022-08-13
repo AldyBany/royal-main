@@ -2,6 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 
 @layer components{
@@ -21,3 +23,116 @@
         @apply fill-black
     }
 }
+
+.row {
+    margin-top: 12px;
+    }
+.img {
+    width: 250px;
+    height: 40px;
+    }
+
+.toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.08); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.toggle span{
+    position: absolute;
+    width: 30px;
+    height: 2.4px;
+    /* background-color: #1863ff; */
+    background-color: #333333;
+    color: #2e5b88;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.toggle span:nth-child(1){
+    transform: translateY(-7px);
+    /* width: 20px; */
+    left: 5px;
+}
+
+.toggle.active span:nth-child(1){
+    width: 20px;
+    transform: translateY(0px) rotate(45deg);
+}
+
+.toggle span:nth-child(2){
+    transform: translateY(7px);
+    /* width: 10px; */
+    left: 5px;
+}
+
+.toggle.active span:nth-child(2){
+    width: 20px;
+    transform: translateY(0px) rotate(315deg);
+}
+
+.toggle.active span:nth-child(3){
+    transform: translateX(60px);
+}
+
+.toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.08); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.toggle span{
+    position: absolute;
+    width: 30px;
+    height: 2.4px;
+    /* background-color: #1863ff; */
+    background-color: #333333;
+    color: #2e5b88;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.toggle span:nth-child(1){
+    transform: translateY(-7px);
+    /* width: 20px; */
+    left: 5px;
+}
+
+.toggle.active span:nth-child(1){
+    width: 20px;
+    transform: translateY(0px) rotate(45deg);
+}
+
+.toggle span:nth-child(2){
+    transform: translateY(7px);
+    /* width: 10px; */
+    left: 5px;
+}
+
+.toggle.active span:nth-child(2){
+    width: 20px;
+    transform: translateY(0px) rotate(315deg);
+}
+
+.toggle.active span:nth-child(3){
+    transform: translateX(60px);
+}
+
+
+

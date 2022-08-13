@@ -3,7 +3,7 @@ import {Data4} from 'data/mechanic.js'
 
 const mechanic = () => {
 
-    console.log("all data:" ,Data4)
+    // console.log("all data:" ,Data4)
   return (
     <section className={styles.wrapper}>
         <div className={styles.container}>
@@ -19,6 +19,7 @@ const mechanic = () => {
                 ))}
 
             </div>
+            <p className={styles.sub}>Total Energies , Notre partenaire</p>
              
         </div>
     </section>
@@ -28,11 +29,12 @@ const mechanic = () => {
 export default mechanic
 
 const styles={
-    wrapper:'h-screen w-full container  mt-48',
+    wrapper:'h-full w-full container mt-48 mb-24',
     container:'pt-8 px-6',
     subtitle:'text-blue font-semibold text-3xl mb-12 text-center',
-    grid:'grid grid-cols-3 gap-6',
-    card:'grid gap-3 bg-white pt-7 px-5 pb-6',
-    cardTitle:'text-2xl text-blue font-bold'
+    grid:'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6',
+    card:'grid gap-3 bg-white pt-7 px-5 pb-6 rounded-xl',
+    cardTitle:'text-2xl text-blue font-bold',
+    sub:'text-center my-12 text-2xl font-semibold text-black'
 
 }
