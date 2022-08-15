@@ -8,38 +8,42 @@ const about = () => {
   return (
     <div className="max-w-screen-lg mx-auto px-3 sm:px-6 mt-20 mb-16 mb-8 grid gap-20 md:gap-0 md:grid-cols-2">
          
-        <div className="w-52 h-52 sm:w-64 lg:w-80 p-4 flex items-center justify-center,driving sm:h-64 lg:h-80 justify-self-center order-last sm:order-first md:justify-self-start rounded-full border-2 border-dashed border-white relative">
+        <div className="w-52 h-52 sm:w-64 lg:w-80 p-4 flex items-center justify-center,driving sm:h-64 lg:h-80 justify-self-center order-last sm:order-first xl:justify-self-start rounded-full border-2 border-dashed border-white relative">
             {/* <div className="w-50 md:w-60 h-50 md:h-60 rounded-full  border-2 border-dashed border-white relative mt-8"></div> */}
 
            
-            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] grid">
 
                 {retraite}
-                <span className="text-blue">Assurance Auto</span>
+                <span className="text-blue text-sm font-semibold text-center">Assurance Auto</span>
             </div>
 
-            <div className="w-16 h-16 bg-orange  rounded-full absolute shadow-md top-[50%] left-0 translate-x-[-50%] translate-y-[-50%]">
+            <div className="w-16 h-16 bg-orange  rounded-full absolute shadow-md top-[50%] left-0 translate-x-[-50%] translate-y-[-50%] grid">
 
                 {retraite}
-                <span className="text-blue">Auto Ecole</span>
+                <span className="text-blue  text-sm font-semibold text-center">Auto Ecole</span>
             </div>
 
-            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-[50%] right-0 translate-x-[50%] translate-y-[-50%]">
+            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-[50%] right-0 translate-x-[50%] translate-y-[-50%] grid">
 
                 {retraite}
-                <span className="text-blue">Mechanic General</span>
+                <span className="text-blue  text-sm font-semibold text-center">Mechanic General</span>
             </div>
 
-            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] grid">
 
                 {retraite}
-                <span className="text-blue">Lavage</span>
+                <span className="text-blue text-sm font-semibold text-center ">Lavage</span>
             </div>
 
-            <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <div className="w-16 h-16  rounded-full absolute  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
 
                 {voiture}
-                {/* <span>Votre Voiture</span> */}
+                
+            </div>
+            <div className="w-52 h-52 rounded-full border-2 border-dashed border-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"> 
+            </div>
+            <div className="w-28 h-28 rounded-full border-2 border-dashed border-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"> 
             </div>
         </div>
         <div>

@@ -16,7 +16,7 @@ const assurance = () => {
     const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
   return (
-    <section className={`${styles.wrapper} `} >
+    <div className={`${styles.wrapper} `} >
         
         <div className={styles.container}>
             <h2 className={styles.subtitle}>Choisir Royal Assurances, c'est choisir</h2>
@@ -61,10 +61,10 @@ const assurance = () => {
                         <div className={styles.icon}>{item.icon}</div>
                         <h4 className={styles.cardTitle}>{item.title}</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
-                        <a className={styles.link}>
+                        <div className={styles.link}>
                             <span>Decouvrez nos produits</span>
                             <span>{SVG}</span>
-                        </a>
+                        </div>
                     </SwiperSlide>
                 ))}
                 
@@ -81,7 +81,7 @@ const assurance = () => {
 
         
 
-    </section>
+    </div>
   )
 }
 
@@ -108,8 +108,8 @@ const styles={
 const data =[
     {id:1,title:'Assurance Auto',icon:voiture},
     {id:2,title:'Assurance Maison',icon:habita},
-    {id:3,title:'Assurance Business',icon:voiture},
-    {id:4,title:'Assurance Commerciale',icon:voiture},
+    // {id:3,title:'Assurance Business',icon:voiture},
+    // {id:4,title:'Assurance Commerciale',icon:voiture},
     {id:5,title:'Assurance Sante',icon:voiture},
     {id:6,title:'Assurance Vie',icon:voiture},
 ]

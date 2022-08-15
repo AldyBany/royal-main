@@ -5,7 +5,7 @@ const mechanic_service = () => {
   return (
     <div>
         <h2 className={styles.subtitle}>Mechanique General pour votre voiture</h2>
-        <div className="max-w-4xl mx-auto grid gap-3 md:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 px-3 md:px-12">
+        <div className="lg:max-w-screen-md mx-auto grid gap-4 md:max-w-[540px] place-items-center md:gap-8 grid-cols-2 lg:grid-cols-3 px-3">
        
        <div className="md:w-60 md:h-60 rounded-2xl bg-white pt-5 px-3 flex flex-col items-center space-y-4">
          <span>{Data4[0].icon}</span>

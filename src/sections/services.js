@@ -7,7 +7,7 @@ const services = () => {
   return (
     <section className={styles.wrapper} id={2}>
         <h2 className={styles.title}>Nos Services</h2>
-      {/* <Assurance/> */}
+      <Assurance/>
       <div className="h-48"></div>
       <Mechanic/>   
     </section>

@@ -20,7 +20,7 @@ export default function Home() {
 
   const[cliked,setCliked] =useState(false)
   return (
-    <div className='border-box mt-6 font-montserrat'>
+    <div className='border-box mt-6'>
       <Navbar/>
       {/* <Banner/> */}
       <About/>

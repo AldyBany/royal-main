@@ -16,8 +16,8 @@ const n = () => {
             <img src={Logo.src}/>
         </div>
              
-        <div className={`absolute left-0 top-16 flex flex-col items-center justify-center right-0 bg-orange z-10 transition-ease duration-1000 opacity-100 h-96 shadow-md ${cliked?'left-[-400px] opacity-0':'left-0 opacity-100'} rounded-xl md:static md:top-0 md:z-0 md:bg-transparent md:opacity-100 md:shadow-none md:flex-row`}>
-            <ul className='flex flex-col md:flex-row'>
+        <div className={`absolute left-0 top-16 flex flex-col items-center justify-center right-0 bg-orange z-10 transition-ease duration-1000 opacity-100 h-96 shadow-md ${cliked?'left-[-400px] opacity-0':'left-0 opacity-100'} rounded-xl lg:static lg:top-0 lg:z-0 lg:bg-transparent lg:opacity-100 lg:shadow-none lg:flex-row`}>
+            <ul className='flex flex-col lg:flex-row'>
                 {
                     navItems.map((link)=>(
                         <Link
@@ -42,7 +42,7 @@ const n = () => {
             </ul>
         </div>
 
-        <div className='md:hidden '  onClick={()=>setCliked(!cliked)}>
+        <div className='lg:hidden '  onClick={()=>setCliked(!cliked)}>
             <span className={styles.toggleBtn}>
                 {toggle}
             </span>
