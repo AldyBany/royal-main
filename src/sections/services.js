@@ -1,5 +1,5 @@
 import React from 'react'
-import Assurance from './assurance'
+import Swipers from '../components/swiper2'
 import Mechanic from './mechanic_service'
 import Emergency from './emergency'
 
@@ -7,7 +7,7 @@ const services = () => {
   return (
     <section className={styles.wrapper} id={2}>
         <h2 className={styles.title}>Nos Services</h2>
-      <Assurance/>
+      <Swipers/>
       <div className="h-48"></div>
       <Mechanic/>   
     </section>

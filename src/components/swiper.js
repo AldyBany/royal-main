@@ -1,33 +1,23 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectFade,Autoplay } from 'swiper';
-import 'swiper/css/effect-fade'
 
-
-
+// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/autoplay';
 
-export default () => {
-  
+export default function Lide(){
   return (
     <Swiper
-      modules={[EffectFade,Autoplay]}
-      effect={"fade"}
-      loop={true}
-      autoplay={true}
+      spaceBetween={50}
+      direction='vertical'
       slidesPerView={1}
-      className="h-screen w-full"
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+      className="h-80"
     >
-      <SwiperSlide className='w-full bg-red-400'  style={{backgroundImage:`url('./bg1.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Des Services de Qualité pour vos Voitures</h1>
-      <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti et quos sequi! Doloribus, tenetur. Adipisci corporis ullam sunt quia? Maxime iure amet ratione.</p>
-
-      </div>
-      </SwiperSlide>
-      <SwiperSlide className='w-full bg-yellow-400'  style={{backgroundImage:`url('./bg.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>Slide 4</SwiperSlide>
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
     </Swiper>
   );
 };
-

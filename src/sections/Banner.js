@@ -11,27 +11,41 @@ const Banner = () => {
   return (
 <Swiper
       modules={[EffectFade,Autoplay]}
-      effect={"fade"}
+      // effect={"fade"}
+      direction='vertical'
       loop={true}
-      autoplay={true}
+      // autoplay={true}
       slidesPerView={1}
+      speed={1000}
       
-      className="h-screen w-full"
+      className="h-screen w-full rounded-b-right- rounded-bl-xl rounded-br-xl"
+      id={1}
     >
-      <SwiperSlide className='w-full bg-red-400 flex items-center px-3 sm:px-6'  style={{backgroundImage:`url('./bg1.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>
+      <SwiperSlide className='w-full bg-red-400 px-3 flex items-center sm:px-6 relative z-[-100]'  style={{backgroundImage:`url('./bg1.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>
+        
         <div className={styles.content}>
+          <div className="max-w-5xl relative z-100 lg:ml-32 justify-self-start ">
           <h1 className={styles.title}>Des Services de Qualité pour vos Voitures</h1>
         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti et quos sequi! Doloribus, tenetur. Adipisci corporis ullam sunt quia? Maxime iure amet ratione.</p>
+        <div className="w-[80%] h-[1px] bg-white mb-8"></div>
+        <div className="flex items-center space-x-2">
+          <p className='text-white'>En partenariat avec </p>
+          <img src="./total.png" className='w-20'/>
+        </div>
+          </div>
+
+          {/* <div className="absolute -right-96 top-24  z-100">
+            <img src="./person.png" className="w-[850px]"/>
+          </div>
+
+          
+           */}
 
         </div>
       </SwiperSlide>
-      <SwiperSlide className='w-full flex items-center px-3 sm:px-6'  style={{backgroundImage:`url('./bg.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>
-        <div className={styles.content}>
-          <h1 className={styles.title}>Chez Royal Services votre Voiture est en securite</h1>
-        <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti et quos sequi! Doloribus, tenetur. Adipisci corporis ullam sunt quia? Maxime iure amet ratione.</p>
 
-        </div>
-      </SwiperSlide>
+      
+      
     </Swiper>
   )
 }
@@ -42,9 +56,9 @@ const styles = {
   container:'h-[85vh] md:h-[95vh] w-full p-5 flex items-center justify-center',
   navbar:'h-[80%] w-14 bg-orange fixed left-0 top-24 z-100',
   swiper:'h-48 w-[40%] bg-blue absolute bottom-0 right-0 z-10',
-  content:'max-w-4xl md:max-w-2xl grid justify-self-center ',
-  title:'text-5xl md:text-7xl font-bold text-orange justify-self-center mb-4',
-  description:"md:text-xl text-white font-semibold"
+  content:'max-w-screen-2xl absolute left-0 top-0 bottom-0 z-10 pt-28 md:pt-[40%] lg:pt-24 xl:pt-36 px-6 bg-gradient-to-r from-orange',
+  title:'text-5xl md:text-8xl lg:text-6xl font-bold text-blue justify-self-center mb-8 max-w-3xl',
+  description:"md:text-xl max-w-3xl text-white font-semibold mb-12"
 }
   
 
