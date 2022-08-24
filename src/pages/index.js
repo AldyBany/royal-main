@@ -31,7 +31,7 @@ export default function Home() {
       <Banner/>
       {/* <Lide/> */}
       <About/>
-      {/* <Item/> */}
+      <Item/>
       {/* <Swipers/> */}
       {/* <Fade/> */}
      

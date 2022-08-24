@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {aHabita,aVie,aEducation,aMaladie,aPeople,aVoyage} from '../data/assurance'
 import {retraite,voiture,respect,trust,driving,hands,habita} from '../assets/assurances/data'
 
 // Import Swiper styles
@@ -30,7 +31,7 @@ export default  function Swipers() {
   
     >
       <SwiperSlide>
-      <div className={styles.icon}>{habita}</div>
+      <div className={styles.icon}>{aPeople}</div>
                         <h4 className={styles.cardTitle}>Assurance Auto</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -39,7 +40,7 @@ export default  function Swipers() {
                         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className={styles.icon}>{voiture}</div>
+      <div className={styles.icon}>{aHabita}</div>
                         <h4 className={styles.cardTitle}>Assurance Maison</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -48,7 +49,7 @@ export default  function Swipers() {
                         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className={styles.icon}>{habita}</div>
+      <div className={styles.icon}>{aEducation}</div>
                         <h4 className={styles.cardTitle}>Assurance Business</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -57,7 +58,7 @@ export default  function Swipers() {
                         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className={styles.icon}>{habita}</div>
+      <div className={styles.icon}>{aVoyage}</div>
                         <h4 className={styles.cardTitle}>Assurance Commerciale</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -66,7 +67,7 @@ export default  function Swipers() {
                         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className={styles.icon}>{voiture}</div>
+      <div className={styles.icon}>{aMaladie}</div>
                         <h4 className={styles.cardTitle}>Assurance Sante</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -75,7 +76,7 @@ export default  function Swipers() {
                         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className={styles.icon}>{voiture}</div>
+      <div className={styles.icon}>{aVie}</div>
                         <h4 className={styles.cardTitle}>Assurance Vie</h4>
                         <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam exercitationem itaque reprehenderit laboriosam repudiandae est.</p>
                         <div className={styles.link}>
@@ -89,17 +90,17 @@ export default  function Swipers() {
       <div className="w-[30%] grid gap-2">
       <span className="justify-self-center">{Client}</span>
         
-        <span className="text-center">Assistance 7 jours /7 et 24h/ en cas de problem</span>
+        <span className="text-center text-blue font-semibold">Assistance 7 jours /7 et 24h/ en cas de problem</span>
       </div>
       <div className="w-[30%] grid gap-2">
       <span className="justify-self-center">{People}</span>
         
-        <span className="text-center">+ de 200 Clients nous font confiance</span>
+        <span className="text-center text-blue font-semibold">Assistance 7j/7 et 24h/24 en cas de problem</span>
       </div>
       <div className="grid gap-2 w-[30%]">
         <span className="justify-self-center">{Appel}</span>
         
-        <span className="text-center">+ de 200 Clients nous font confiance</span>
+        <span className="text-center text-blue font-semibold">+ de 200 Clients nous font confiance</span>
       </div>
 
     </div>
@@ -113,10 +114,10 @@ const styles={
     subtitle:'text-white font-semibold text-xl md:text-3xl mb-12',
     // cardBox:'lg:max-w-screen-xl xs:w-[180px] sm:w-[460px] md:w-[780px] mx-auto w-full lg:mb-32',
     card:'text-white grid gap-5',
-    icon:'w-20 h-20 bg-orange rounded-full  flex items-center justify-center',
-    cardTitle:'text-xl font-semibold text-orange mb-3',
-    description:'text-white mb-4',
-    link:'text-sm flex items-baseline space-x-3 text-white',
+    icon:'w-20 h-20 bg-orange rounded-full  mx-auto flex items-center justify-center',
+    cardTitle:'text-xl font-semibold text-center text-orange mb-3',
+    description:'text-white mb-4 text-center',
+    link:'text-sm flex items-baseline space-x-3 text-white text-center justify-center',
     imgBox:'absolute -bottom-48 left-[15%] w-[70%] lg:w-[60%] mx-auto h-80 rounded-md'
 }
 

@@ -15,7 +15,7 @@ const about = () => {
             <div className="w-16 h-16 bg-orange rounded-full absolute shadow-md top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] grid">
 
                 {retraite}
-                <span className="text-blue text-sm font-semibold text-center">Assurance Auto</span>
+                <span className="text-blue text-sm font-semibold text-center">Societe d'Assurance</span>
             </div>
 
             <div className="w-16 h-16 bg-orange  rounded-full absolute shadow-md top-[50%] left-0 translate-x-[-50%] translate-y-[-50%] grid">
@@ -50,7 +50,7 @@ const about = () => {
             <div>
                 <h2 className="text-4xl text-blue font-semibold mb-3">Let us take care of your car</h2>
                 <h4 className="font-semibold text-orange mb-5">Qui sommes nous?</h4>
-                <p className="text-gray mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sit illo asperiores, vitae architecto iste perferendis.</p>
+                <p className="text-gray mb-2">Royal Services est un garage moderne offrant un entretien, des réparations de véhicules de haute qualité pour toutes les marques et tous les modèles.</p>
                 <p className="text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quidem delectus alias vero iusto, quibusdam deserunt ea repudiandae odio eligendi sit, commodi ducimus, soluta sint!</p>
 
             </div>

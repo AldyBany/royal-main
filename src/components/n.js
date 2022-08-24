@@ -6,24 +6,25 @@ import Sticky from 'react-stickynode'
 
 const n = () => {
     const[cliked,setCliked] = useState(false)
+    const responsiveNav = `absolute left-0 top-16 flex flex-col items-center justify-center right-0 bg-orange z-10 transition-ease duration-1000 opacity-100 h-96 shadow-md ${cliked?'left-[-400px] opacity-0':'left-0 opacity-100'} rounded-xl lg:static lg:top-0 lg:z-0 lg:bg-transparent lg:opacity-100 lg:shadow-none lg:flex-row`
    
    
   return (
-    <Sticky innerActiveClass="shadow-md transition-ease duration-1000 bg-[#fff]" innerZ={1000}>
+    <Sticky innerActiveClass={activeClass} innerZ={1000}>
         <nav className={styles.nav}>
         
         <div className={styles.imgBox}>
-            <span className="text-blue">Royal</span>
-            <span className="text-orange">Services</span>
+            <span className={styles.logo1}>Royal</span>
+            <span className={styles.logo2}>Services</span>
         </div>
              
-        <div className={`absolute left-0 top-16 flex flex-col items-center justify-center right-0 bg-orange z-10 transition-ease duration-1000 opacity-100 h-96 shadow-md ${cliked?'left-[-400px] opacity-0':'left-0 opacity-100'} rounded-xl lg:static lg:top-0 lg:z-0 lg:bg-transparent lg:opacity-100 lg:shadow-none lg:flex-row`}>
-            <ul className='flex flex-col lg:flex-row xl:space-x-12'>
+        <div className={responsiveNav}>
+            <ul className={styles.navList}>
                 {
                     navItems.map((link)=>(
                         <Link
                         onClick={()=>setCliked(!cliked)}
-                        activeClass="text-orange"
+                        // activeClass="text-orange"
                             to={`${link.id}`} 
                             spy={true}
                             smooth={true}
@@ -43,13 +44,13 @@ const n = () => {
             </ul>
         </div>
 
-        <div className='lg:hidden '  onClick={()=>setCliked(!cliked)}>
+        <div className={styles.toggle}  onClick={()=>setCliked(!cliked)}>
             <span className={styles.toggleBtn}>
                 {toggle}
             </span>
         </div>
 
-        <div className="hidden lg:block">
+        <div className={styles.caller}>
         <Caller/>
 
         </div>
@@ -61,6 +62,8 @@ const n = () => {
     </Sticky>
     
   )
+
+  
 }
 
 export default n
@@ -73,13 +76,21 @@ const navItems=[
 
 const styles={
     nav:'max-w-screen-xl mx-auto px-3 mt-8 md:p-6 flex items-center justify-between h-6 relative mb-10',
+    logo1:'text-blue',
+    logo2:'text-orange',
     container:'flex justify-between items-center',
     imgBox:'text-2xl font-bold cursor-pointer w-[180px] md:w-[380px]',
+    toggle:'lg:hidden ',
     toggleBtn:'text-3xl cursor-pointer mx-2 block h-16 w-16 rounded-full bg-orange flex items-center justify-center',
     navMenu:' md:static absolute bg-orange md:bg-transparent w-full top-0 md:w-full md:py-0 py-6 md:pl-0 pl-7 transition-all opacity-100 ease-in duration-500 z-1000',
+    navList:'flex flex-col lg:flex-row xl:space-x-12',
     navItem:'mx-4 my-6 md:my-0',
-    navLink:'text-white md:text-blue text-sm hover:text-orange font-semibold duration-500 cursor-pointer'
+    navLink:'text-white md:text-blue text-sm hover:text-orange font-semibold duration-500 cursor-pointer',
+    caller:"hidden lg:block"
 }
+
+const activeClass = "shadow-md transition-ease duration-500 bg-[#fff] rounded-br-xl rounded-bl-xl"
+
     
 
 

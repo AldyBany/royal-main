@@ -1,10 +1,12 @@
 import React from 'react'
 import {Data4} from 'data/mechanic.js'
+import { aHabita } from 'data/assurance'
 
 const mechanic_service = () => {
   return (
     <div>
         <h2 className={styles.subtitle}>Mechanique General pour votre voiture</h2>
+        <p>{aHabita}</p>
         <div className="lg:max-w-screen-md mx-auto grid gap-4 md:max-w-[540px] place-items-center md:gap-8 grid-cols-2 lg:grid-cols-3 px-3">
        
        <div className="md:w-60 md:h-60 rounded-2xl bg-white pt-5 px-3 flex flex-col items-center space-y-4">

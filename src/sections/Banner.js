@@ -18,7 +18,7 @@ const Banner = () => {
       slidesPerView={1}
       speed={1000}
       
-      className="h-screen w-full rounded-b-right- rounded-bl-xl rounded-br-xl"
+      className="h-screen w-full rounded-b-right- rounded-bl-2xl rounded-br-2xl"
       id={1}
     >
       <SwiperSlide className='w-full bg-red-400 px-3 flex items-center sm:px-6 relative z-[-100]'  style={{backgroundImage:`url('./bg1.jpg')`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center'}}>
@@ -26,7 +26,7 @@ const Banner = () => {
         <div className={styles.content}>
           <div className="max-w-5xl relative z-100 lg:ml-32 justify-self-start ">
           <h1 className={styles.title}>Des Services de Qualité pour vos Voitures</h1>
-        <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti et quos sequi! Doloribus, tenetur. Adipisci corporis ullam sunt quia? Maxime iure amet ratione.</p>
+        <p className={styles.description}>Royal Services est un garage moderne offrant un entretien, des réparations de véhicules de haute qualité pour toutes les marques et tous les modèles.</p>
         <div className="w-[80%] h-[1px] bg-white mb-8"></div>
         <div className="flex items-center space-x-2">
           <p className='text-white'>En partenariat avec </p>

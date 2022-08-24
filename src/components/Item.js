@@ -13,11 +13,9 @@ return (
 	animate={{ opacity: 1 }}
 	exit={{ opacity: 0 }}
 	>
-	<img
-		// src={url}
-		className="img"
-		alt="geeksforgeeks"
-	/>
+	<div className="bg-blue text-white w-80">
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet fugit natus beatae aliquam nobis! Ad fugiat nihil vel est enim.</p>
+	</div>
 	<div className="row">{content}</div>
 	</motion.div>
 );
@@ -41,13 +39,9 @@ return (
 	onClick={toggleOpen}
 	initial={{ borderRadius: [25] }}
 	>
-	<motion.div className="avatar" layout>
+	<motion.div className="avatar cursor-pointer bg-blue text-white w-60 px-6 py-3 rounded-full" layout>
 		{" "}
-		<img
-		className='img'
-		// src={url}
-		alt="gfg"
-		/>{" "}
+		<p className="text-white">Pourquoi choisir royal?</p>{" "}
 	</motion.div>
 	<br />
 	<AnimatePresence>{isOpen && <Content content={content} />}
